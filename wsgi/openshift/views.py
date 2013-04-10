@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from blog_project.apps.blog.models import Blog
+from openshift.apps.blog.models import Blog
 
 
 def news(request):

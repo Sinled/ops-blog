@@ -2,6 +2,9 @@
 # Django settings for openshift project.
 import imp, os
 
+rel = lambda *x: os.path.join(os.path.dirname(os.path.abspath(__file__)), *x)
+
+
 # a setting to determine whether we are running on OpenShift
 ON_OPENSHIFT = False
 if os.environ.has_key('OPENSHIFT_REPO_DIR'):
@@ -91,11 +94,19 @@ ADMIN_MEDIA_PREFIX = '/static/admin/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
-    os.path.join(PROJECT_DIR, 'static')
+    # os.path.join(PROJECT_DIR, 'static')
+    rel('static'),
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
 )
+print '---'
+print rel('static'),
+print '---'
+print '==='
+print os.path.join(PROJECT_DIR, 'static')
+print '==='
+
 
 # List of finder classes that know how to find static files in
 # various locations.

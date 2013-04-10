@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404
-from blog_project.apps.blog.models import Blog
+from openshift.apps.blog.models import Blog
 
 
 def blog_post(request, post_id):
