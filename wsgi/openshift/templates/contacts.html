@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- main-visual -->
+<figure class="main-visual" >
+	<img src="/static/images/img-6.jpg" alt="Community Groups" width="940" height="234" >
+	<span class="mask"></span>
+	<h1 class="page-title">контактная информация</h1>
+</figure>
+<!-- contacts-section -->
+<div class="contacts-section section">
+	<!-- map -->
+	<div class="widget map">
+		<h2>Карта</h2>
+		<div class="map-box">
+			<a href="#"><img src="/static/images/img-5.gif" alt="" class="placeholder" ></a>
+		</div>
+	</div>
+	<div class="widget">
+		<h2>Контактная информация</h2>
+		<!-- contact-list -->
+		<dl class="contact-list">
+			<dt>Адресс</dt>
+			<dd>
+				<span>231 Apartament</span>
+				<span>Street</span>
+				<span>61000 Citycountry</span>
+				<span>Country</span>
+			</dd>
+			<dt>Телефон</dt>
+			<dd>777-727-8148</dd>
+			<dt>Почта</dt>
+			<dd><a href="mailto:test-mail">test@mail.com</a></dd>
+		</dl>
+	</div>
+</div>
+
+{% endblock content %}

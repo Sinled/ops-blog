@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- main-visual -->
+<figure class="main-visual" >
+	<img src="/static/images/img-9.jpg" height="234" width="939" alt="" />
+	<span class="mask"></span>
+	<h1 class="page-title">Блог</h1>
+</figure>
+<div id="twocolumns">
+	<!-- content -->
+	<section id="content">
+		<article class="post">
+			<h1>{{ blog_item.post_title }}</h1>
+			{{ blog_item.post_text|safe }}
+		</article>
+	</section>
+</div>
+{% endblock content %}
+

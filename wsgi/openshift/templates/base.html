@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>My BLog</title>
+	<link rel="stylesheet" media="all" href="/static/css/all.css"/>
+	<link href='http://fonts.googleapis.com/css?family=Cardo:400,400italic,700|Muli:400,300italic,300,400italic' rel='stylesheet'>
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:800&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+	<script src="/static/js/jquery.min.js"></script>
+	<script src="/static/js/jquery.main.js"></script>
+</head>
+<body>
+	<!-- wrapper -->
+	<div id="wrapper">
+		<div class="w1">
+			<!-- header -->
+			<header id="header">
+				<div class="panel">
+					<!-- search -->
+					<form action="#" class="search">
+						<fieldset>
+							<input type="text" placeholder="Поиск" />
+							<input type="submit" value="search" />
+						</fieldset>
+					</form>
+				</div>
+				<!-- main navigaion -->
+				<nav id="nav">
+					<ul>
+						<li><a href="/">Новости</a></li>
+						<li><a href="/blog/">Блог</a></li>
+						<li><a href="#">обо мне</a></li>
+						<li><a href="/contacts/">контакты</a></li>
+					</ul>
+				</nav>
+			</header>
+			<!-- main -->
+			<section id="main">
+				{% block content %}
+				
+				{% endblock content %}
+				<!-- slogan -->
+				<div class="slogan">
+					<p><strong>Some Lorem Slogan ipsum dolor sit amet, consectetur adipisicing elit. Deleniti doloribus corrupti libero quidem voluptates nisi.</strong></p>
+				</div>
+			</section>
+		</div>
+		<!-- footer -->
+<!-- 		<footer id="footer">
+	<div class="footer-holder">
+		copy
+		<span class="copy">&copy; 2013 Рога и копыта.</span>
+		social-networks
+		<ul class="social-networks">
+			<li><a href="#" class="facebook">Facebook</a></li>
+			<li><a href="#" class="twitter">Twitter</a></li>
+		</ul>
+	</div>
+</footer> -->
+	</div>
+</body>
+</html>
