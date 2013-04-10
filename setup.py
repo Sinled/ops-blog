@@ -9,5 +9,5 @@ setup(
     author='Sinled',
     author_email='sinled@ukr.net',
     url='http://www.python.org/sigs/distutils-sig/',
-    install_requires=['Django>=1.3', 'South=0.7.6', 'pil==1.1.7'],
+    install_requires=['Django>=1.3', 'South==0.7.6', 'PIL==1.1.7'],
 )
